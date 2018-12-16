@@ -20,7 +20,7 @@ An example should make this clear:
 a line of text followed by a `shift-in` character
 	this line on the other hand is followed by a `shift-out` character
 this line is followed by 2 `shift-in` characters
-  		this line is followed by a `linefeed` character
+		this line is followed by a `linefeed` character
 		this line is followed 2 `shift-out` characters
 the end.
 ````
