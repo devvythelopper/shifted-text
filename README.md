@@ -27,7 +27,7 @@ the end.
 
 Any source file that conforms to this format (`Shifted-Text`) begins with an optional Byte Order Mark (BOM) from one of the unicode encodings. If it does not, UTF-8 is assumed, but other encodings are allowed. After the BOM follows a `shift-in` (`\15`) character. After the `shift-in` character follows an optional number (1-8) donating the breadth of the indentation if it was expressed in space characters. If there is no number the breadth of the indentation defaults to 4 space characters. Then follows a linefeed (`\n`) character. After this begins the content. 
 
-In the content every `shift-in` character increases indentation and every `shift-out` (`\14`) character decreases indentation while multiple consecutive `shift-in` characters also correspond to a single new line. New lines without any change in indentation are expressed using `linefeed` characters.
+In the content every `shift-in` character increases indentation and every `shift-out` (`\14`) character decreases indentation while multiple consecutive `shift-in` characters also correspond to a single new line. New lines without any change in indentation are expressed using `linefeed` characters. (Any other new line character – e.g. `carriage return` – is part of the content and should _not_ be displayed as a new line in a conforming text editor)
 
 Tab characters (`\t`) work as you would expect them with a minimum length of 1 and a maximum length equal to the breadth of the indentation as defined at the beginning of the `Shifted-Text` file. Thus consistency is fully achieved.
 
