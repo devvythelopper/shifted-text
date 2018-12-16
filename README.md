@@ -2,7 +2,7 @@ Shifted-Text
 =======================
 A proposal for simplifying text formats with hierarchical content
 
-Anybody with some experience in coding has stumbled over the topic `tab` characters (`\\t`) versus `space` characters (` `). Relentlessly people have fought in both trenches and no conclusion has ever been reached, since both have their advantages and disadvantages. What I am going to propose has many advantages of both sides.
+Anybody with some experience in coding has stumbled over the topic `tab` characters (`\t`) versus `space` characters (` `). Relentlessly people have fought in both trenches and no conclusion has ever been reached, since both have their advantages and disadvantages. What I am going to propose has many advantages of both sides.
 
 Indentation has long been used to allow the human eye to directly recognize the hierarchical structure of markup languages (`XML`, `HTML`) or source code files (`.c`, `.js`). The designers of some programming (and markup) languages (e.g. Python, Haskell, yml) have even made indentation part of tha language's syntax. It is a useful tool. However it requires a lot of extra bytes and thus is not very bandwidth friendly. But what if there was a way to have both: visual hierarchies and low bandwidth?
 
