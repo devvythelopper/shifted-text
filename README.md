@@ -25,7 +25,7 @@ this line is followed by 2 `shift-in` characters
 the end.
 ````
 
-Any source file that conforms to this format (`Shifted-Text`) begins with an optional Byte Order Mark (BOM) from one of the unicode encodings. If it does not, UTF-8 is assumed, but other encodings are allowed. After the BOM follows a `shift-out` (`\15`) character. After the `shift-out` character follows an optional number (1-8) donating the breadth of the indentation if it was expressed in space characters. If there is no number the breadth of the indentation defaults to 4 space characters. Then follows a `shift-in` (`\14`) character. After this begins the content. 
+Any source file that conforms to this format (`Shifted-Text`) begins with an optional Byte Order Mark (BOM) from one of the unicode encodings. If it does not, UTF-8 is assumed, but other encodings are allowed. After the BOM follows a `shift-out` (`\15`) character. After the `shift-out` character follows an optional number (1-8) donating the breadth of the indentation if it was expressed in space characters. If there is no number the breadth of the indentation defaults to 4 characters. Then follows a `shift-in` (`\14`) character. After this begins the content. 
 
 In the content every `shift-in` character increases indentation and every `shift-out` (`\14`) character decreases indentation while multiple consecutive `shift-in` characters also correspond to a single new line. New lines without any change in indentation are expressed using `linefeed` characters – across all systems.
 
