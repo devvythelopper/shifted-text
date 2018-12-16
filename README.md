@@ -29,6 +29,6 @@ Any source file that conforms to this format (`Shifted-Text`) begins with an opt
 
 In the content every `shift-in` character increases indentation and every `shift-out` (`\14`)  character decreases indentation while multiple consecutive `shift-in` characters also corresponds to a single new line. New lines without any change in indentation are expressed using `linefeed` characters.
 
-Tab characters (`\t`) work as you would expect them with a minimum length of 1 and a maximum length equal to the breadth of the indentation as defined at the beginning of the Shifted-Text file.
+Tab characters (`\t`) work as you would expect them with a minimum length of 1 and a maximum length equal to the breadth of the indentation as defined at the beginning of the `Shifted-Text` file.
 
 That's it folks. For this to take a foothold it must be adopted by the development teams of your favorite source editors and compilers. So please do propose it to them. I would be happy even more if the language designers would make it the default for their compilers. I have already been programming using this file format and it makes quite a few tasks a lot easier.
