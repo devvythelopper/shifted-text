@@ -35,7 +35,9 @@ After this (or instead of it) follows an optional _two digit hexadecimal number_
 
 Then follows a `shift-in` (`\15`) character. After this begins the content. 
 
-In the content every `shift-in` character increases indentation and every `shift-out` (`\14`) character decreases indentation while multiple consecutive `shift-in` characters also correspond to a single new line. New lines without any change in indentation are expressed using `linefeed` characters – across all systems.
+In the content every `shift-in` character increases indentation and every `shift-out` (`\14`) character decreases indentation while _multiple_ consecutive `shift-in` characters correspond to a _single_ new line (with an increased indentation by as many levels as `shift-in` characters). Analogously _multiple_ consecutive `shift-out` characters correspond to a _single_ new line (with decreased indentation by as many levels as `shift-out` characters).
+
+New lines without any change in indentation are expressed using `linefeed` characters – across all systems.
 
 Tab characters (`\t`) work as you would expect them with a minimum length of 1 and a maximum length equal to the breadth of the indentation as defined at the beginning of the `Shifted-Text` file. Thus consistency is fully achieved.
 
