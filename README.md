@@ -10,9 +10,9 @@ ASCII to the rescue: In the ASCII control character set there are some character
 
 The idea now is really simple: 
 
-A single `shift-in` character means that a new line begins with an indentation one level higher than the line before. Multiple `shift-in` characters characters mean that a single new line begins with an indentation as many levels higher than the line before as there are `shift-in` characters.
+A single `shift-in` character means that a new line begins with an indentation one level deeper than the line before. _Multiple_ `shift-in` characters characters mean that a _single_ new line begins with an indentation as many levels deeper than the line before as there are `shift-in` characters.
 
-A single `shift-out` character analogously means that a new line begins with an indentation one level lower than the line before. Multiple `shift-out` characters characters mean that a single new line begins with an indentation as many levels lower than the line before as there are `shift-out` characters.
+A single `shift-out` character analogously means that a new line begins with an indentation one level lower than the line before. _Multiple_ `shift-out` characters characters mean that a _single_ new line begins with an indentation as many levels lower than the line before as there are `shift-out` characters.
 
 An example should make this clear:
 
