@@ -31,7 +31,7 @@ After the BOM follows a `shift-out` (`\14`) character.
 
 After the `shift-out` character follows a single optional _hexadecimal digit_ (from `1` to `F`) donating the _breadth of the indentation_ if it was expressed in space characters. If there is no number the breadth of the indentation defaults to 4 characters. 
 
-After this (or instead of it) follows an optional _two digit hexadecimal number_ denoting the _width of lines_ (allowed values range from 16 (0x10) to 255 (0xFF), at which a soft-wrap linebreak _must_ occur. There is no default line-width, e.g. if nothing is specified lines may or may not be soft-wrapped by the editor according to user preference.
+After this (or instead of it) follows an optional _two digit hexadecimal number_ denoting the _width of lines_ (allowed values range from 16 (0x10) to 255 (0xFF), at which a soft-wrap linebreak _must_ occur and the line after the soft-wrap must occure and any line in the soft-wrapped block must be indented one level deeper than the original line. There is no default line-width, e.g. if nothing is specified lines may or may not be soft-wrapped by the editor according to user preference.
 
 Then follows a `shift-in` (`\15`) character. After this begins the content. 
 
